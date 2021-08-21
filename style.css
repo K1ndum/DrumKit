@@ -1,0 +1,76 @@
+html {
+    background-image: url("https://js3001.github.io/img/background.jpg");
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.keys {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.key {
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 18px 6px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex: 1 1 auto;
+    flex-basis: 80px;   
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+    transition: all .07s ease; 
+    cursor: pointer;
+}
+
+.key div {
+    font-size: 40px;
+}
+
+.sound {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+.abstr {
+    display: inline-block;
+    box-shadow: 0 0 2px #000;
+    transition: 2s ease;    
+    background: rgba(0,0,0,0.4);
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+}
+
+.abstr0{
+    text-align: center;
+}
+
+.abstr__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.abstr:hover {
+    transition-duration: 0s;
+}
